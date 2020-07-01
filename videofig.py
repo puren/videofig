@@ -198,7 +198,7 @@ def videofig(num_frames, redraw_func, play_fps=25, big_scroll=30, key_func=None,
 
   # Build scrollbar
   scroll_axes_handle = plt.Subplot(fig_handle, outer_grid[1])
-  scroll_axes_handle.set_facecolor('lightgoldenrodyellow')
+  scroll_axes_handle.set_axis_bgcolor('lightgoldenrodyellow')
   fig_handle.add_subplot(scroll_axes_handle)
   scroll_handle = Slider(scroll_axes_handle, '', 0.0, num_frames - 1, valinit=0.0)
 
